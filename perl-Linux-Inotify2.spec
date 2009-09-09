@@ -60,7 +60,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorarch}/Linux
 %{perl_vendorarch}/Linux/*.pm
+%dir %{perl_vendorarch}/auto/Linux
 %dir %{perl_vendorarch}/auto/Linux/Inotify2
 %{perl_vendorarch}/auto/Linux/Inotify2/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Linux/Inotify2/*.so
