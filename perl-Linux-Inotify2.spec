@@ -8,12 +8,12 @@
 Summary:	Linux::Inotify2 - scalable directory/file change notification
 #Summary(pl.UTF-8):
 Name:		perl-Linux-Inotify2
-Version:	1.2
+Version:	1.21
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Linux/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3acafbec22a3e9c88ee788397773fd83
+# Source0-md5:	5aee608d90fc9a23df1edcf6d2c3ad4c
 URL:		http://search.cpan.org/dist/Linux-Inotify2/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
