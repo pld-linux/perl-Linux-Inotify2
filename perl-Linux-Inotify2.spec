@@ -65,7 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Linux/*.pm
 %dir %{perl_vendorarch}/auto/Linux
 %dir %{perl_vendorarch}/auto/Linux/Inotify2
-%{perl_vendorarch}/auto/Linux/Inotify2/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Linux/Inotify2/*.so
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
