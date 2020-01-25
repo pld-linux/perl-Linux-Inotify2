@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Linux
 %define	pnam	Inotify2
 Summary:	Linux::Inotify2 - scalable directory/file change notification
