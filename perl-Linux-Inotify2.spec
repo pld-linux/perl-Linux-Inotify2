@@ -1,19 +1,19 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_with	tests		# do not perform "make test"
 #
 %define	pdir	Linux
 %define	pnam	Inotify2
 Summary:	Linux::Inotify2 - scalable directory/file change notification
 #Summary(pl.UTF-8):
 Name:		perl-Linux-Inotify2
-Version:	1.22
-Release:	12
+Version:	2.3
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Linux/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bc0a86f04476f9e0aaab026b8081f097
-URL:		http://search.cpan.org/dist/Linux-Inotify2/
+Source0:	https://www.cpan.org/modules/by-module/Linux/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	2ef33c2f80104c6187a950fb7d3075fe
+URL:		https://search.cpan.org/dist/Linux-Inotify2/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-common-sense
@@ -30,8 +30,6 @@ It has a number of advantages over the Linux::Inotify module:
    - it is better documented
    - it has callback-style interface, which is better suited for
      integration.
-
-# %description -l pl.UTF-8
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
